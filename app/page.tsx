@@ -116,9 +116,6 @@ export default function IndexPage() {
 
       <ExamplesNav className="[&>a:first-child]:text-primary" />
       
-     
-     
-      
         </div>
   )
 }
