@@ -35,12 +35,11 @@ export default function IndexPage() {
         <PageHeaderDescription>This is my page. Just Code.</PageHeaderDescription>
   </PageHeader> */}
 
-          <h1 className="font-heading font-extrabold text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
-            An example app built using Next.js 13 server components.
+          <h1 className="font-heading font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+            This is the New Age.
           </h1>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            I&apos;m building a web app with Next.js 13 and open sourcing
-            everything. Follow along as we figure this out together.
+            The future is Coding.
           </p>
       
       
