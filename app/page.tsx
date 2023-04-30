@@ -17,17 +17,14 @@ import { StyleSwitcher } from "@/components/style-switcher"
 //import DashboardPage from "@/app/examples/dashboard/page"
 import TradingViewWidget from "@/app/charts/page"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Calendar } from "@/components/ui/calendar"
+
 
 
 export default function IndexPage() {
   return (
     <div className="container relative pb-10">
-      <div className="flex w-full items-center justify-between">
-      <Avatar>
-      <AvatarImage src="https://github.com/brcelso.png" />
-      <AvatarFallback>CN</AvatarFallback>
-      </Avatar>
-      </div>
+      
       <StyleSwitcher />
       <PageHeader>
         <PageHeaderHeading>Welcome to the  New Age.=D</PageHeaderHeading>
@@ -37,9 +34,14 @@ export default function IndexPage() {
         </PageHeaderDescription>
       </PageHeader>
       
-      <section className="pb-8 md:pb-10">
+      <section className="pb-8 md:pb-10 border">
         <div className="flex w-full items-center justify-between">
-          <div className="flex space-x-4">
+        <div className="flex space-x-4">
+      <Calendar />
+      {/*<Avatar>
+      <AvatarImage src="https://github.com/brcelso.png" />
+      <AvatarFallback>CN</AvatarFallback>
+      </Avatar> */}
             <Link href="/docs" className={cn(buttonVariants({ size: "lg" }))}>
               Get Started
             </Link>
@@ -55,12 +57,7 @@ export default function IndexPage() {
               <Icons.gitHub className="mr-2 h-4 w-4" />
               GitHub
             </Link>
-            </div>
-             </div>
-            </section>
-             <section className="pb-8 md:pb-10">
-            <div className="flex w-full items-center justify-between">
-            <div className="flex space-x-4">
+            
             <Link
               target="_blank"
               rel="noreferrer"
@@ -85,12 +82,6 @@ export default function IndexPage() {
               <Icons.twitter className="mr-2 h-4 w-4" />
               Twitter
             </Link>
-            </div>
-            </div>
-            </section>
-            <section className="pb-8 md:pb-10">
-            <div className="flex w-full items-center justify-between">
-            <div className="flex space-x-4">
             <Link
               target="_blank"
               rel="noreferrer"
@@ -116,7 +107,7 @@ export default function IndexPage() {
               Instagram
             </Link>
             </div>
-            </div>
+             </div>
             </section>
 
       <ExamplesNav className="[&>a:first-child]:text-primary" />
