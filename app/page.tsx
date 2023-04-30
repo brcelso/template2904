@@ -51,7 +51,7 @@ export default function IndexPage() {
       <AvatarImage src="https://github.com/brcelso.png" />
       <AvatarFallback>CN</AvatarFallback>
       </Avatar> */}
-            <Link href="/docs" className={cn(buttonVariants({ size: "lg" }))}>
+            <Link href="/charts" className={cn(buttonVariants({ size: "lg" }))}>
               Get Started
             </Link>
 
