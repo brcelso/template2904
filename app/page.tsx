@@ -52,7 +52,7 @@ export default function IndexPage() {
       <AvatarFallback>CN</AvatarFallback>
       </Avatar> */}
             <Link href="/charts" className={cn(buttonVariants({ size: "lg" }))}>
-              Get Started
+              Charts
             </Link>
 
             <Link
