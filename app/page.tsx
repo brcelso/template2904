@@ -34,9 +34,13 @@ export default function IndexPage() {
         </PageHeaderDescription>
       </PageHeader>
       
-      <section className="pb-8 md:pb-10 border">
-        <div className="flex w-full items-center justify-between">
-        <div className="flex space-x-4">
+      <div className="overflow-hidden rounded-lg">
+          <TradingViewWidget />
+        </div>
+
+      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32 border">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
+        
       <Calendar />
       {/*<Avatar>
       <AvatarImage src="https://github.com/brcelso.png" />
@@ -106,18 +110,18 @@ export default function IndexPage() {
               <Icons.instagram className="mr-2 h-4 w-4" />
               Instagram
             </Link>
-            </div>
+            
              </div>
             </section>
 
       <ExamplesNav className="[&>a:first-child]:text-primary" />
       
      
-      <div className="overflow-hidden rounded-lg">
-          <TradingViewWidget />
-        </div>
+     
       
-
+        </div>
+  )
+}
         {/*<section className="overflow-hidden rounded-lg border bg-background shadow-xl">
         <TradingViewWidget />
               </section>*/}
@@ -144,9 +148,7 @@ export default function IndexPage() {
           <DashboardPage />
         </div>*/}
       
-    </div>
-  )
-}
+
 
 
 
