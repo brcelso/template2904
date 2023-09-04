@@ -54,6 +54,10 @@ function TradingViewWidget() {
               [
                 "Meta",
                 "META|All"
+              ],
+              [
+                "Disney",
+                "DIS|All"
               ]
           ],
           "chartOnly": false,
